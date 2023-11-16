@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     ErrorHeader: typeof import('./src/@core/components/ErrorHeader.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Slider: typeof import('./src/@core/components/Slider.vue')['default']
     ThemeSwitcher: typeof import('./src/@core/components/ThemeSwitcher.vue')['default']
   }
 }

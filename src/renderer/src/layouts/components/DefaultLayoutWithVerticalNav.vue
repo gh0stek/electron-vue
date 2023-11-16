@@ -28,23 +28,11 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         rel="noopener noreferrer"
         style="color: inherit"
       >
-        <VIcon
-          class="ms-6 me-4"
-          icon="mdi-github"
-        />
+        <VIcon class="ms-6 me-4" icon="mdi-github" />
       </a>
       <NavbarThemeSwitcher />
-      <VBtn
-        icon
-        variant="text"
-        color="default"
-        class="me-2"
-        size="small"
-      >
-        <VIcon
-          icon="mdi-bell-outline"
-          size="24"
-        />
+      <VBtn icon variant="text" color="default" class="me-2" size="small">
+        <VIcon icon="mdi-bell-outline" size="24" />
       </VBtn>
       <UserProfile />
     </template>
@@ -69,7 +57,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
 <style lang="scss">
 .app-bar-search {
   .v-input__control {
-    width: 236px
+    width: 236px;
   }
 
   .v-field__outline__start {

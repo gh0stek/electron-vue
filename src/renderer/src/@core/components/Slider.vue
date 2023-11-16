@@ -1,19 +1,27 @@
-<script lang="ts" setup>
+<script lang="ts" setup generic="T extends SliderItem">
 import { iconsList } from '@/constants/iconsList'
+
+export type SliderItem = {
+  id: string | number
+}
+
+defineProps<{
+  items: T[]
+}>()
 </script>
 
 <template>
   <div>
     <div class="d-flex align-center flex-wrap">
-      <VCard v-for="icon in iconsList" :key="icon" class="mb-6 me-6">
-        <VCardText class="py-3 px-4">
+      <VCard v-for="item in items" :key="item.id" class="mb-6 me-6">
+        <slot :item="item" />
+        <!-- <VCardText class="py-3 px-4">
           <VIcon size="30" :icon="icon" />
         </VCardText>
 
-        <!-- tooltips -->
         <VTooltip location="top" activator="parent">
           {{ icon }}
-        </VTooltip>
+        </VTooltip> -->
       </VCard>
     </div>
 
@@ -25,7 +33,7 @@ import { iconsList } from '@/constants/iconsList'
         color="primary"
         target="_blank"
       >
-        View All Material Design Icons
+        next
       </VBtn>
     </div>
   </div>

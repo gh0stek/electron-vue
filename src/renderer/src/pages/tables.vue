@@ -21,9 +21,7 @@ import TableFixedHeader from '@/views/user-interface/tables/TableFixedHeader.vue
     <!-- dark -->
     <VCol cols="12">
       <VCard title="Dark">
-        <VCardText>
-          Use <code>dark</code> prop to switch table to the dark theme.
-        </VCardText>
+        <VCardText> Use <code>dark</code> prop to switch table to the dark theme. </VCardText>
         <TableDark />
       </VCard>
     </VCol>
@@ -41,9 +39,7 @@ import TableFixedHeader from '@/views/user-interface/tables/TableFixedHeader.vue
     <!-- height -->
     <VCol cols="12">
       <VCard title="Height">
-        <VCardText>
-          Use the <code>height</code> prop to set the height of the table.
-        </VCardText>
+        <VCardText> Use the <code>height</code> prop to set the height of the table. </VCardText>
         <TableHeight />
       </VCard>
     </VCol>
@@ -52,7 +48,8 @@ import TableFixedHeader from '@/views/user-interface/tables/TableFixedHeader.vue
     <VCol cols="12">
       <VCard title="Fixed header">
         <VCardText>
-          Use the <code>fixed-header</code> prop together with the <code>height</code> prop to fix the header to the top of the table.
+          Use the <code>fixed-header</code> prop together with the <code>height</code> prop to fix
+          the header to the top of the table.
         </VCardText>
 
         <TableFixedHeader />

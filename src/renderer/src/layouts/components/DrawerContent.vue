@@ -7,26 +7,19 @@ import { useTheme } from 'vuetify'
 
 const vuetifyTheme = useTheme()
 const upgradeBanner = computed(() => {
-  return vuetifyTheme.global.name.value === 'light'
-    ? upgradeBannerLight
-    : upgradeBannerDark
+  return vuetifyTheme.global.name.value === 'light' ? upgradeBannerLight : upgradeBannerDark
 })
 </script>
 
 <template>
   <!-- 👉 Nav header -->
   <div class="nav-header">
-    <RouterLink
-      to="/"
-      class="app-logo d-flex align-center gap-x-3 app-title-wrapper"
-    >
+    <RouterLink to="/" class="app-logo d-flex align-center gap-x-3 app-title-wrapper">
       <!-- ℹ️ You can also use img tag or VImg here -->
       <div v-html="logo" />
 
       <Transition name="vertical-nav-app-title">
-        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">
-          Materio
-        </h1>
+        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">Materio</h1>
       </Transition>
     </RouterLink>
   </div>
@@ -115,7 +108,6 @@ const upgradeBanner = computed(() => {
       }"
     />
   </ul>
-
 </template>
 
 <style lang="scss">
